@@ -36,8 +36,9 @@
 :root {
     /* Paleta de cores */
     --color-claro: ivory;
+    --color-escuro: rgb(118, 112, 124);
     --color-verde: #72ccd7;
-    --color-text: #2f64a0;
+    --color-text: #5357a7;
 
     /* Tipografia */
     --font-family-principal: 'Poppins', sans-serif;
@@ -152,7 +153,7 @@ input {
 }
 
 input::placeholder {
-    color: rgba(105, 105, 105, 0.582);
+    color: var(--color-escuro);
     transition: color 0.3s ease;
 }
 
@@ -187,6 +188,10 @@ a {
     color: var(--color-text);
     display: inline-block;
     cursor: pointer;
+}
+
+a:hover {
+    color: var(--color-roxo);
 }
 
 /* 
