@@ -2,28 +2,49 @@
 
 /* 
 Typical Device Breakpoints
-----------------------------
-📱 Mobile Pequeno	    360px
-📱 Mobile Médio	        414px
-📱 Mobile Grande	    480px
-📱 Tablet               768px
-💻 Laptop	            1024px
-🖥 Desktop Médio        1280px
-🖥 Desktop Grande	    1440px
-🖥 4K / Ultra-Wide	    1920px+ 
+---------------------------------
+    DISPOSITIVO       MAX-WIDTH
+---------------------------------
+⭐ Mobile Mini           320px
+📱 Mobile Pequeno	     480px
+📱 Mobile Médio	         576px
+📱 Mobile Grande	     768px
+📲 Tablet               1024px
+💻 Desktop Médio        1280px
+🖥️ Desktop Grande	     1440px
+📺 4K / Ultra-Wide	    2560px+ 
+---------------------------------
 */
 
-/* tablet */
-@media screen and (min-width:700px) and (max-width:1024px) {
+/* small device */
+@media screen and (max-width:380px) {
 
     body {
-        background: white url(../files/img/tablet-background.jpg) no-repeat fixed center top;
+        background: #89f6fa url(../files/img/tablet-background.jpg) no-repeat fixed left center;
+        background-size: cover;
+    }
+
+    #form {
+        margin: 10px;
+    }
+
+    #logo {
+        width: 45%;
+        min-height: 20%;
+    }
+}
+
+/* tablet */
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    body {
+        background: #89f6fa url(../files/img/tablet-background.jpg) no-repeat fixed center top;
         background-size: cover;
     }
 
     main {
-        width: 80vw;
-        height: 500px;
+        width: 75%;
+        max-height: 500px;
         flex-wrap: wrap;
     }
 
@@ -32,17 +53,16 @@ Typical Device Breakpoints
         height: 100%;
     }
 
+    h1 {
+        font-size: 1.5em;
+    }
+
     #form {
         width: 50%;
         height: 85%;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    h1 {
-       font-size: 1.5em;
-       margin-bottom: 50px;
     }
 
     form {
@@ -55,17 +75,18 @@ Typical Device Breakpoints
     }
 }
 
-@media screen and (min-width:1024px) {
+@media only screen and (min-width:1024px) {
 
     body {
-        background: white url(../files/img/pc-background.jpg) no-repeat fixed center top;
+        background: #89f6fa url(../files/img/pc-background.jpg) no-repeat fixed center top;
         background-size: cover;
         transition: background-image 1s ease-in-out;
     }
 
     main {
         font-size: 1.1em;
-        width: 950px;
+        max-width: 900px;
+        height: 70%;
         flex-wrap: wrap;
     }
 
@@ -74,33 +95,20 @@ Typical Device Breakpoints
         height: 100%;
     }
 
+    h1 {
+        font-size: 1.5em;
+    }
+
     #form {
         width: 50%;
-        height: 85%;
+        height: 95%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
     }
-
-    h1 {
-       font-size: 1.5em;
-       margin-top: 10px;
-       margin-bottom: 80px;
-       
-    }
-
-    form {
-        width: 100%;
-        font-size: 1.2em;
-    }
-
-    .send {
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-
+    
     a {
         font-size: .9em;
     }
-
 }

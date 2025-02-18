@@ -69,8 +69,8 @@ body {
 
     font-family: var(--font-family-principal);
     color: var(--color-text);
-    background: white url(../files/img/cell-background.jpg) no-repeat fixed right center;
-    background-size: 700px;
+    background: #89f6fa url(../files/img/test.jpg) no-repeat fixed center center;
+    background-size: cover;
     transition: background-position 1s ease-in-out;
 }
 
@@ -125,7 +125,7 @@ main {
     background: url('../files/img/logo.png') no-repeat center center;
     background-size: contain;
     width: 60%;
-    min-height: 200px;
+    min-height: 150px;
 }
 
 /* 
@@ -136,21 +136,25 @@ main {
 #form {
     display: flex;
     /* Usa flexbox para organização */
-    justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: center;
-    /* Centraliza verticalmente */
-    text-align: center;
-    /* Centraliza o texto */
     flex-direction: column;
     /* Organiza os elementos em coluna */
+    justify-content: space-between;
+    /* Centraliza horizontalmente */
+    text-align: center;
+    /* Centraliza o texto */
     width: 100%;
     height: 100vh;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 fieldset {
     border: none;
-    margin-bottom: 40px;
+    margin-bottom: 12%;
 }
 
 label {
@@ -209,7 +213,6 @@ a {
     color: var(--color-text);
     display: inline-block;
     cursor: pointer;
-    margin-top: 60px;
 }
 
 a:hover {
@@ -239,7 +242,7 @@ footer {
     padding: 8px 0;
     font-size: .9em;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
+}     
 
 footer {
     transition: background 0.3s ease;
@@ -249,13 +252,13 @@ footer:hover {
     background: rgba(255, 255, 255, 0.3);
 }
 
-footer>a {
+footer > p > a {
     margin: 0px auto;
     font-size: 1em;
     color: var(--color-text);
     text-decoration: none;
 }
 
-footer>a:hover {
+footer > p > a:hover {
     text-decoration: underline;
 }
