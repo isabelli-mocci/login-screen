@@ -20,7 +20,7 @@ Typical Device Breakpoints
 @media screen and (max-width:380px) {
 
     body {
-        background: #89f6fa url(../files/img/tablet-background.jpg) no-repeat fixed left center;
+        background: #89f6fa url(../img/tablet-background.jpg) no-repeat fixed left center;
         background-size: cover;
     }
 
@@ -38,7 +38,7 @@ Typical Device Breakpoints
 @media screen and (min-width:768px) and (max-width:1024px) {
 
     body {
-        background: #89f6fa url(../files/img/tablet-background.jpg) no-repeat fixed center top;
+        background: #89f6fa url(../img/tablet-background.jpg) no-repeat fixed center top;
         background-size: cover;
         transition: background-image 1s ease-in-out;
     }
@@ -79,7 +79,7 @@ Typical Device Breakpoints
 @media only screen and (min-width:1024px) {
 
     body {
-        background: #89f6fa url(../files/img/pc-background.jpg) no-repeat fixed center top;
+        background: #89f6fa url(../img/pc-background.jpg) no-repeat fixed center top;
         background-size: cover;
         transition: background-image 1s ease-in-out;
     }
