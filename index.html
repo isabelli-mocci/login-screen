@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Bubble</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media-query.css">
+</head>
+
+<body>
+    <main>
+        <div id="logo"></div>
+
+        <h1>Login</h1>
+
+        <form action="login.php" method="post" autocomplete="on">
+
+            <fieldset>
+                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="email">
+                <label for="iemail">email</label>
+
+                <input type="password" name="password" id="ipassword" autocomplete="current-password" minlength="8"
+                    maxlength="20" required placeholder="password">
+                <label for="ipassword">password</label>
+            </fieldset>
+
+            <button type="submit" class="send">
+                <span class="material-symbols-outlined">arrow_right_alt</span>
+            </button>
+        </form>
+
+        <a href="#">esqueci minha senha</a>
+    </main>
+
+    <footer>
+        Copyright &copy Isabelli Cristina Mocci 2025 | All Rights Reserved
+    </footer>
+</body>
+
+</html>

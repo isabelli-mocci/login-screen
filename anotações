@@ -1,0 +1,18 @@
+.btn {
+            padding: 12px 24px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .flat {
+            background-color: #bbb;
+            box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Efeito ao pressionar */
+        .btn:active {
+            transform: scale(0.95);
+        }
