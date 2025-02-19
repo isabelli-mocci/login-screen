@@ -24,6 +24,10 @@ Typical Device Breakpoints
         background-size: cover;
     }
 
+    main {
+        height: 75%;
+    }
+
     #form {
         margin: 10px;
     }
