@@ -37,8 +37,8 @@
     --color-principal: #5357a7;
     --color-secundaria: #777dde;
     --color-input: rgb(118, 112, 124);
-    
-    
+
+
     /* Tipografia */
     --font-family-principal: 'Poppins', sans-serif;
 }
@@ -67,6 +67,7 @@ body {
     color: var(--color-principal);
     background: #89f6fa url(../img/cell-background.jpg) no-repeat fixed center center;
     background-size: cover;
+    overflow-x: hidden;
     transition: background-position 1s ease-in-out;
 }
 
@@ -75,13 +76,15 @@ h1 {
     font-weight: 400;
 }
 
-main, footer {
+main,
+footer {
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 /* 
 ---------------------------------------------
 05. main style
@@ -121,7 +124,8 @@ main {
 --------------------------------------------- 
 */
 
-#form, form {
+#form,
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
